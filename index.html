@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="styles.css" rel="stylesheet" />
+  <title>Victor Moraud | Portfolio BTS SIO SLAM</title>
+</head>
+<body>
+
+  <!-- Particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="logo">VM</div>
+    <div class="nav-links">
+      <a href="#hero">Accueil</a>
+      <a href="#bts-skills">BTS SIO</a>
+    </div>
+    <button class="theme-toggle" id="theme-toggle">🌙</button>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="blob blob1"></div>
+    <div class="blob blob2"></div>
+    <div class="blob blob3"></div>
+    <div class="hero-content">
+      <div class="hero-badge">🎓 Étudiant en BTS SIO SLAM</div>
+      <h1 class="hero-title">Victor Moraud</h1>
+      <p class="hero-subtitle">Développeur</p>
+    </div>
+  </section>
+
+  <!-- BTS SIO Competences -->
+  <section id="bts-skills">
+    <div class="container">
+      <h2 class="section-title reveal">Compétences BTS SIO SLAM</h2>
+      <p class="section-subtitle reveal">Validation des compétences du référentiel</p>
+      <div class="bts-grid">
+
+        <!-- B1 -->
+        <div class="competence-card reveal" onclick="toggleCompetence(this)">
+          <div class="competence-header">
+            <div class="competence-badge">B1</div>
+            <h3>Gérer le patrimoine informatique</h3>
+            <div class="expand-icon">+</div>
+          </div>
+          <div class="competence-preview">
+            <p>Mise en place d'une infrastructure virtualisée complète sur serveur HPE et aussi sur un serveur Fujitsu pendant mon stage, avec déploiement parallèle sur Hyper-V et Proxmox.</p>
+          </div>
+          <div class="competence-details">
+            <p>
+              Durant mon stage, j'ai eu l'opportunité de travailler sur un serveur physique HPE mais aussi sur un serveur Fujitsu pour y déployer une infrastructure virtualisée complète. N'ayant jamais configuré de RAID 5 auparavant, j'ai dû me former rapidement sur cette technologie pour mettre en place le stockage de manière sécurisée.
+            </p>
+            <p>
+              J'ai réalisé cette infrastructure en autonomie, en la déployant sur deux hyperviseurs différents : Hyper-V (solution payante de Microsoft) et Proxmox (solution open source). Cette approche m'a permis de comparer les deux environnements et de constater que Proxmox offrait une ergonomie plus moderne et intuitive.
+            </p>
+            <p>
+              Sur chacune de ces plateformes, j'ai installé et configuré les mêmes services : un contrôleur de domaine Active Directory avec les rôles DNS et DHCP, un serveur RDS/TSE pour l'accès distant, ainsi que plusieurs postes clients (Windows et Linux). J'ai créé 3 utilisateurs avec différents profils pour tester la gestion centralisée des comptes et des ressources réseau.
+            </p>
+            <p>
+              Pour l'infrastructure Proxmox, j'ai mis en place un cluster à deux nœuds avec des pools de stockage ZFS et configuré la réplication des machines virtuelles entre les serveurs.
+            </p>
+          </div>
+        </div>
+
+        <!-- B2 -->
+          <div class="competence-card reveal" onclick="toggleCompetence(this)">
+            <div class="competence-header">
+              <div class="competence-badge">B2</div>
+              <h3>Répondre aux incidents et aux demandes d'assistance</h3>
+              <div class="expand-icon">+</div>
+            </div>
+
+            <div class="competence-preview">
+              <p>Mise en place et utilisation de GLPI pour la gestion des incidents et des demandes utilisateurs.</p>
+            </div>
+
+            <div class="competence-details">
+              <p>
+                Dans le cadre de ma formation, j’ai réalisé un TP portant sur la mise en place 
+                d’un outil de gestion de parc informatique et de ticketing avec GLPI.
+              </p>
+
+              <p>
+                J’ai déployé la solution GLPI sur une machine virtuelle Debian à l’aide de Docker, 
+                ce qui m’a permis de comprendre les étapes d’installation et de configuration 
+                d’un outil ITSM.
+              </p>
+
+              <p>
+                J’ai ensuite configuré différents profils utilisateurs (administrateur, technicien, utilisateur) 
+                afin de simuler un environnement réel de support informatique avec des droits adaptés 
+                à chaque rôle.
+              </p>
+
+              <p>
+                J’ai utilisé GLPI pour gérer des demandes et des incidents, en suivant leur cycle de vie :
+                création du ticket, traitement par le technicien et résolution.
+              </p>
+
+              <p>
+                J’ai également mis en place un système de gestion des équipements avec l’ajout de postes 
+                dans l’inventaire, ainsi que des réservations de matériel selon les droits des utilisateurs.
+              </p>
+            </div>
+          </div>
+
+        <!-- B3 -->
+        <div class="competence-card reveal" onclick="toggleCompetence(this)">
+          <div class="competence-header">
+            <div class="competence-badge">B3</div>
+            <h3>Développer la présence en ligne</h3>
+            <div class="expand-icon">+</div>
+          </div>
+
+          <div class="competence-preview">
+            <p>TP SEO + documentation sur les bonnes pratiques.</p>
+          </div>
+          <div class="competence-details">
+            <p>
+              Dans le cadre de ma formation, j’ai réalisé un TP portant sur le référencement naturel (SEO).
+            </p>
+
+            <p>
+              À partir de ce TP, j’ai ensuite créé une documentation regroupant les bonnes pratiques 
+              pour améliorer la visibilité d’un site web sur les moteurs de recherche.
+            </p>
+
+            <p>
+              J’y ai présenté plusieurs optimisations importantes :
+            </p>
+
+            <p>- structure du site claire (arborescence)</p>
+            <p>- optimisation des balises (title, meta description, H1, H2)</p>
+            <p>- rédaction de contenu pertinent et structuré</p>
+            <p>- maillage interne entre les pages</p>
+            <p>- optimisation des images (poids + balises ALT)</p>
+
+            <p>
+              J’ai également abordé des aspects techniques comme la vitesse du site 
+              et l’adaptation mobile.
+            </p>
+
+            <p>
+              Ce travail m’a permis de mieux comprendre comment améliorer 
+              la présence en ligne d’un site web.
+            </p>
+          </div>
+        </div>
+
+        <!-- B4 -->
+        <div class="competence-card reveal" onclick="toggleCompetence(this)">
+          <div class="competence-header">
+            <div class="competence-badge">B4</div>
+            <h3>Travailler en mode projet</h3>
+            <div class="expand-icon">+</div>
+          </div>
+          <div class="competence-preview">
+            <p>Gestion de projet en stage avec GitLab, Trello pour l'organisation personnelle et Asana pour la vision globale, avec réunions hebdomadaires.</p>
+          </div>
+          <div class="competence-details">
+            <p>
+              Mon stage m'a permis de découvrir une organisation de projet structurée avec plusieurs outils collaboratifs déjà en place dans l'entreprise.
+            </p>
+            <p>
+              J'ai utilisé GitLab pour le versionning du code, en effectuant régulièrement des commits, des push, des pull et des merge requests. L'entreprise utilisait Gitmoji comme convention de commits, ce qui permettait de garder un historique clair et lisible des modifications apportées au projet.
+            </p>
+            <p>
+              Pour l'organisation des tâches, j'utilisais principalement Trello pour ma gestion personnelle quotidienne, tandis qu'Asana servait à avoir une vision d'ensemble du projet et à suivre l'avancement global. Cette double approche me permettait de rester organisé au niveau individuel tout en gardant une cohérence avec l'équipe.
+            </p>
+            <p>
+              Nous avions des réunions de suivi toutes les semaines pour faire le point sur l'avancement, les difficultés rencontrées et planifier les prochaines étapes. J'ai également utilisé Miro pour la modélisation des flux, la conception du MCD et l'organisation visuelle des écrans de l'application.
+            </p>
+          </div>
+        </div>
+
+       <!-- B5 -->
+          <div class="competence-card reveal" onclick="toggleCompetence(this)">
+            <div class="competence-header">
+              <div class="competence-badge">B5</div>
+              <h3>Mettre à disposition des utilisateurs un service informatique</h3>
+              <div class="expand-icon">+</div>
+            </div>
+
+            <div class="competence-preview">
+              <p>Migration d’une application métier interne vers Symfony avec mise à disposition pour les utilisateurs.</p>
+            </div>
+
+            <div class="competence-details">
+              <p>
+                Lors de mon stage de deuxième année d’une durée de 8 semaines, 
+                j’ai participé à la migration d’une application métier interne utilisée par l’entreprise.
+              </p>
+
+              <p>
+                Cette application, initialement développée en PHP "legacy", 
+                a été migrée vers le framework Symfony afin d’améliorer sa structure, sa maintenabilité 
+                et sa performance.
+              </p>
+
+              <p>
+                J’ai réalisé cette migration en reprenant les fonctionnalités existantes 
+                et en les adaptant à une architecture plus moderne basée sur le modèle MVC.
+              </p>
+
+              <p>
+                En complément du développement, j’ai rédigé trois documentations utilisateurs 
+                adaptées aux différents rôles présents dans l’application, 
+                afin de faciliter sa prise en main.
+              </p>
+
+              <p>
+                J’ai également mis en place des tests fonctionnels à l’aide de Google Sheets, 
+                en créant un plan de test permettant de vérifier le bon fonctionnement 
+                des différentes fonctionnalités de l’application.
+              </p>
+            </div>
+          </div>
+
+       <!-- B6 -->
+        <div class="competence-card reveal" onclick="toggleCompetence(this)">
+          <div class="competence-header">
+            <div class="competence-badge">B6</div>
+            <h3>Organiser son développement professionnel</h3>
+            <div class="expand-icon">+</div>
+          </div>
+
+          <div class="competence-preview">
+            <p>Auto-formation via OpenClassrooms tout au long du BTS SIO pour développer de nouvelles compétences techniques.</p>
+          </div>
+
+          <div class="competence-details">
+            <p>
+              Tout au long de mes deux années de BTS SIO, j’ai complété ma formation 
+              par de l’auto-apprentissage via la plateforme OpenClassrooms.
+            </p>
+
+            <p>
+              J’ai suivi plusieurs formations afin de renforcer mes compétences techniques, notamment en :
+            </p>
+
+            <p>- React (développement front-end moderne)</p>
+            <p>- API REST (communication entre applications)</p>
+            <p>- PHP (back-end)</p>
+            <p>- MySQL (gestion de base de données)</p>
+            <p>- Bases du numérique</p>
+
+            <p>
+              Ces formations m’ont permis d’approfondir certains concepts vus en cours 
+              et d’acquérir de nouvelles compétences directement applicables 
+              dans mes projets personnels et professionnels.
+            </p>
+
+            <p>
+              Cette démarche d’auto-formation m’a permis de devenir plus autonome 
+              et de mieux m’adapter aux technologies utilisées en entreprise.
+            </p>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    themeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark');
+      themeToggle.textContent = body.classList.contains('dark') ? '☀️' : '🌙';
+      localStorage.setItem('theme', body.classList.contains('dark') ? 'dark' : 'light');
+    });
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark');
+      themeToggle.textContent = '☀️';
+    }
+
+    // Smooth Scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          window.scrollTo({
+            top: target.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+
+    // Scroll Reveal
+    const reveals = document.querySelectorAll('.reveal');
+    
+    const revealOnScroll = () => {
+      reveals.forEach(element => {
+        const elementTop = element.getBoundingClientRect().top;
+        const windowHeight = window.innerHeight;
+        
+        if (elementTop < windowHeight - 80) {
+          element.classList.add('active');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Toggle Competence Details
+    function toggleCompetence(card) {
+      const isExpanded = card.classList.contains('expanded');
+      
+      // Ferme toutes les autres cards
+      document.querySelectorAll('.competence-card').forEach(c => {
+        if (c !== card) {
+          c.classList.remove('expanded');
+        }
+      });
+      
+      // Toggle la card cliquée
+      if (isExpanded) {
+        card.classList.remove('expanded');
+      } else {
+        card.classList.add('expanded');
+        // Scroll smooth vers la card
+        setTimeout(() => {
+          card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }, 300);
+      }
+    }
+
+    // Create particles
+    const particlesContainer = document.getElementById('particles');
+    for (let i = 0; i < 20; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      const size = Math.random() * 15;
+      particle.style.width = size + 'px';
+      particle.style.height = size + 'px';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.animationDuration = (Math.random() * 20 + 15) + 's';
+      particle.style.animationDelay = Math.random() * 10 + 's';
+      particlesContainer.appendChild(particle);
+    }
+  </script>
+
+</body>
+</html>
