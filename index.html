@@ -41,30 +41,33 @@
       <div class="bts-grid">
 
         <!-- B1 -->
-        <div class="competence-card reveal" onclick="toggleCompetence(this)">
-          <div class="competence-header">
-            <div class="competence-badge">B1</div>
-            <h3>Gérer le patrimoine informatique</h3>
-            <div class="expand-icon">+</div>
-          </div>
-          <div class="competence-preview">
-            <p>Mise en place d'une infrastructure virtualisée complète sur serveur HPE et aussi sur un serveur Fujitsu pendant mon stage, avec déploiement parallèle sur Hyper-V et Proxmox.</p>
-          </div>
-          <div class="competence-details">
-            <p>
-              Durant mon stage, j'ai eu l'opportunité de travailler sur un serveur physique HPE mais aussi sur un serveur Fujitsu pour y déployer une infrastructure virtualisée complète. N'ayant jamais configuré de RAID 5 auparavant, j'ai dû me former rapidement sur cette technologie pour mettre en place le stockage de manière sécurisée.
-            </p>
-            <p>
-              J'ai réalisé cette infrastructure en autonomie, en la déployant sur deux hyperviseurs différents : Hyper-V (solution payante de Microsoft) et Proxmox (solution open source). Cette approche m'a permis de comparer les deux environnements et de constater que Proxmox offrait une ergonomie plus moderne et intuitive.
-            </p>
-            <p>
-              Sur chacune de ces plateformes, j'ai installé et configuré les mêmes services : un contrôleur de domaine Active Directory avec les rôles DNS et DHCP, un serveur RDS/TSE pour l'accès distant, ainsi que plusieurs postes clients (Windows et Linux). J'ai créé 3 utilisateurs avec différents profils pour tester la gestion centralisée des comptes et des ressources réseau.
-            </p>
-            <p>
-              Pour l'infrastructure Proxmox, j'ai mis en place un cluster à deux nœuds avec des pools de stockage ZFS et configuré la réplication des machines virtuelles entre les serveurs.
-            </p>
-          </div>
-        </div>
+       <div class="competence-card reveal" onclick="toggleCompetence(this)">
+  <div class="competence-header">
+    <div class="competence-badge">B1</div>
+    <h3>Gérer le patrimoine informatique</h3>
+    <div class="expand-icon">+</div>
+  </div>
+  <div class="competence-preview">
+    <p>Mise en place d’une infrastructure virtualisée avec gestion de la haute disponibilité, sauvegarde et réplication des données.</p>
+  </div>
+  <div class="competence-details">
+    <p>
+      Lors de mon stage, j’ai participé à la gestion et à l’évolution du patrimoine informatique en mettant en place une infrastructure virtualisée sur des serveurs HPE et Fujitsu. J’ai notamment configuré un RAID 5 afin d’assurer la sécurisation des données.
+    </p>
+    <p>
+      J’ai déployé cette infrastructure sur deux hyperviseurs : Hyper-V et Proxmox, ce qui m’a permis de comparer leurs fonctionnalités et leur utilisation en environnement professionnel.
+    </p>
+    <p>
+      J’ai installé et configuré plusieurs services essentiels : un contrôleur de domaine Active Directory (DNS, DHCP), un serveur RDS pour l’accès distant, ainsi que des postes clients Windows et Linux avec gestion des utilisateurs.
+    </p>
+    <p>
+      Afin de garantir la continuité de service, j’ai mis en place des mécanismes de sauvegarde des machines virtuelles ainsi qu’un système de réplication entre les nœuds du cluster Proxmox. J’ai également configuré des fonctionnalités de haute disponibilité (HA) permettant de limiter les interruptions en cas de panne.
+    </p>
+    <p>
+      Ces mises en place m’ont permis de mieux comprendre les enjeux liés à la disponibilité, à la sécurité des données et à la fiabilité d’un système d’information.
+    </p>
+  </div>
+</div>
 
         <!-- B2 -->
           <div class="competence-card reveal" onclick="toggleCompetence(this)">
